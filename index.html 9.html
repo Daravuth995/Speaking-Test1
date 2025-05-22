@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>English Speaking Skills – Practice Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background-color: #f4f8fb;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2a5d84;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background-color: #e8f0fe;
+    }
+    input[type="text"], input[type="number"], input[type="range"], output {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #2a5d84;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #1d4566;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .print-page {
+      page-break-before: always;
+      page-break-inside: avoid;
+      margin-bottom: 40px;
+    }
+
+    @media print {
+      body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        font-size: 12pt;
+      }
+      .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+      table, tr, td, th {
+        page-break-inside: avoid !important;
+      }
+      h1, h2 {
+        page-break-after: avoid !important;
+      }
+      button {
+        display: none !important;
+      }
+      input[type="text"], input[type="number"], input[type="range"], output {
+        border: 1px solid #000 !important;
+        background-color: #fff !important;
+        color: #000 !important;
+      }
+      label {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎤 English Speaking Practice Sheet</h1>
+    <h2>Prepared by Teacher Daravuth.Y</h2>
+    <h3>👤 Student Info</h3>
+    <table>
+      <tr>
+        <td><strong>Name:</strong></td>
+        <td><input type="text" placeholder="Enter your name" /></td>
+      </tr>
+      <tr>
+        <td><strong>Student ID:</strong></td>
+        <td><input type="text" placeholder="Enter your ID" /></td>
+      </tr>
+    </table>
+
+    <div class="print-page">
+      <h2>🔤 Part 1: IPA Sounds</h2>
+      <p>Write an English word for each IPA symbol:</p>
+      <table>
+        <thead><tr><th>IPA Symbol</th><th>Example Word</th></tr></thead>
+        <tbody>
+          <tr><td>/ʃ/</td><td><input type="text" /></td></tr>
+          <tr><td>/θ/</td><td><input type="text" /></td></tr>
+          <tr><td>/æ/</td><td><input type="text" /></td></tr>
+          <tr><td>/ŋ/</td><td><input type="text" /></td></tr>
+          <tr><td>/dʒ/</td><td><input type="text" /></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="print-page">
+      <h2>📢 Part 3: Intonation Practice – Feel the Emotion!</h2>
+      <table>
+        <thead><tr><th>Sentence</th><th>Your Intonation Feel</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Are you coming tonight?</td>
+            <td>
+              <label><input type="radio" name="q1" /> 😕 Curious</label>
+              <label><input type="radio" name="q1" /> ❓ Confused</label>
+              <label><input type="radio" name="q1" /> 🤷 Neutral</label>
+            </td>
+          </tr>
+          <tr>
+            <td>I'm really happy to see you.</td>
+            <td>
+              <label><input type="radio" name="q2" /> 😊 Friendly</label>
+              <label><input type="radio" name="q2" /> 😃 Excited</label>
+              <label><input type="radio" name="q2" /> 😍 Loving</label>
+            </td>
+          </tr>
+          <tr>
+            <td>He's not here, is he?</td>
+            <td>
+              <label><input type="radio" name="q3" /> 🤔 Unsure</label>
+              <label><input type="radio" name="q3" /> 😒 Doubtful</label>
+              <label><input type="radio" name="q3" /> 😐 Flat</label>
+            </td>
+          </tr>
+          <tr>
+            <td>That's my favorite book.</td>
+            <td>
+              <label><input type="radio" name="q4" /> 📚 Calm</label>
+              <label><input type="radio" name="q4" /> ❤️ Passionate</label>
+              <label><input type="radio" name="q4" /> 🤗 Happy</label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="print-page">
+      <h2>🧠 Part 4: What Did You Learn Today?</h2>
+      <p><strong>1. IPA stands for…</strong></p>
+      <label><input type="radio" name="ipa" /> International Pronunciation Aid</label>
+      <label><input type="radio" name="ipa" /> International Phonetic Alphabet</label>
+      <label><input type="radio" name="ipa" /> English Accent Practice</label>
+
+      <p><strong>2. What does /ʃ/ sound like?</strong></p>
+      <label><input type="radio" name="sh" /> "Sh" as in ship</label>
+      <label><input type="radio" name="sh" /> "Ch" as in chip</label>
+      <label><input type="radio" name="sh" /> "S" as in sit</label>
+
+      <p><strong>3. What helps change meaning in your voice?</strong></p>
+      <label><input type="radio" name="intonation" /> Intonation</label>
+      <label><input type="radio" name="intonation" /> Punctuation</label>
+      <label><input type="radio" name="intonation" /> Grammar</label>
+    </div>
+
+    <div class="print-page">
+      <h2>🌈 Part 5: Confidence Level</h2>
+      <label for="confidenceRange">How confident do you feel today?</label><br>
+      <input type="range" id="confidenceRange" name="confidenceRange" min="0" max="10" oninput="output.value = confidenceRange.value">
+      <output name="output" id="output">5</output>/10
+    </div>
+
+    <br><br>
+    <button onclick="window.print()">📄 Save as PDF</button>
+  </div>
+</body>
+</html>
